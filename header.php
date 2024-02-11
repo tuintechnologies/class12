@@ -29,14 +29,11 @@ $isLoggedIn = isset($_SESSION['user_id']);
                         <a class="nav-link" href="./profile.php">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <form method="post" action="./logout.php">
-                            <input type="hidden" name="logout" value="1">
-                            <button type="submit" class="btn nav-link btn-danger">Logout</button>
-                        </form>
+                        <a class="nav-link" href="./logout.php">Logout</a>
                     </li>
                 <?php else: ?>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-success" href="login.php">Login</a>
+                        <a class="nav-link btn btn-outline-primary" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-warning" href="signup.php">Signup</a>
